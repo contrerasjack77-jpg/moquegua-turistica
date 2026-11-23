@@ -1,0 +1,330 @@
+/* ORGANIZAR LOS LUGARES TURÍSTICOS */
+
+.lugares {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.lugar {
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    padding-bottom: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.lugar img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.lugar h3 {
+    padding: 15px;
+    color: #751b40;
+}
+
+.lugar p {
+    padding: 0 15px 15px;
+    line-height: 1.5;
+}
+
+.lugar details {
+    margin: 0 15px;
+}
+
+.lugar .boton {
+    background: #751b40;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+@media (max-width: 768px) {
+    .lugares {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 500px) {
+    .lugares {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* DISEÑO DE LUGARES TURÍSTICOS */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+main {
+    max-width: 1200px;
+    margin: auto;
+    padding: 25px;
+}
+
+/* Organizar las 9 tarjetas */
+.lugares {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+/* Diseño de cada tarjeta */
+.lugar {
+    min-width: 0;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    padding-bottom: 20px;
+}
+
+/* Tamaño uniforme para las imágenes */
+.lugar img {
+    display: block;
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.lugar h3 {
+    color: #751b40;
+    margin: 15px;
+}
+
+.lugar p {
+    margin: 15px;
+    line-height: 1.5;
+}
+
+/* Botón Ver más */
+.lugar details {
+    margin: 15px;
+}
+
+.lugar .boton {
+    display: inline-block;
+    background: #751b40;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    list-style: none;
+}
+
+.lugar .boton:hover {
+    background: #a63856;
+}
+
+/* Diseño adaptable */
+@media (max-width: 800px) {
+    .lugares {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 500px) {
+    .lugares {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ENCABEZADO DE MOQUEGUA TURÍSTICA */
+
+.encabezado {
+    background: linear-gradient(135deg, #751b40, #a63856);
+    color: white;
+    text-align: center;
+    padding: 35px 20px;
+}
+
+.encabezado h1 {
+    font-size: 36px;
+    margin: 0 0 12px;
+    color: white;
+}
+
+.encabezado p {
+    font-size: 16px;
+    margin-bottom: 25px;
+}
+
+/* MENÚ DE NAVEGACIÓN */
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px 18px;
+    border-radius: 8px;
+    transition: background 0.3s;
+}
+
+.menu a:hover,
+.menu a.activo {
+    background-color: white;
+    color: #751b40;
+}
+
+/* CENTRAR EL CONTENIDO */
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px 20px;
+}
+
+main h2 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+/* ADAPTACIÓN PARA CELULARES */
+
+@media (max-width: 600px) {
+    .encabezado h1 {
+        font-size: 26px;
+    }
+
+    .menu {
+        gap: 8px;
+    }
+
+    .menu a {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
+
+/* ENCABEZADO VERDE - LUGARES TURISTICOS */
+
+body {
+    margin: 0;
+}
+
+body header.encabezado-principal {
+    display: block !important;
+    width: 100%;
+    background: #175b24 !important;
+    color: white !important;
+    padding: 18px 25px !important;
+    text-align: left !important;
+}
+
+body header.encabezado-principal .barra {
+    max-width: 1250px;
+    margin: 0 auto;
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+body header.encabezado-principal .barra img {
+    width: 55px;
+    height: 75px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+body header.encabezado-principal .barra h1 {
+    color: white !important;
+    font-size: 32px;
+    margin: 0 !important;
+    white-space: nowrap;
+}
+
+body header.encabezado-principal .barra nav {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center;
+    justify-content: flex-end !important;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-left: auto;
+}
+
+body header.encabezado-principal .barra nav a {
+    color: white !important;
+    text-decoration: none !important;
+    background: transparent !important;
+    font-size: 16px;
+    font-weight: normal;
+    padding: 8px 0;
+    white-space: nowrap;
+}
+
+body header.encabezado-principal .barra nav a:hover {
+    color: #ffdd77 !important;
+}
+
+@media (max-width: 900px) {
+    body header.encabezado-principal .barra {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    body header.encabezado-principal .barra h1 {
+        white-space: normal;
+    }
+
+    body header.encabezado-principal .barra nav {
+        margin-left: 0;
+        justify-content: center !important;
+    }
+}
+
+/* PIE DE PAGINA */
+
+footer {
+    background-color: #175b24;
+    color: white;
+    text-align: center;
+    padding: 25px 20px;
+    margin-top: 40px;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+}
+
+/* ENLACES DE LUGARES TURISTICOS */
+
+.link-turistico {
+    display: inline-block;
+    margin: 8px 15px 15px;
+    padding: 9px 12px;
+    background-color: #e8f3e9;
+    color: #175b24;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.link-turistico:hover {
+    background-color: #175b24;
+    color: white;
+}

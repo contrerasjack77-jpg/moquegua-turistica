@@ -1,7 +1,9 @@
 # Moquegua Turística
 
-Proyecto de página web turística para la práctica calificada de la Semana 15.
+Sitio web estático para la práctica de la Semana 15.
 
-Para publicar con GitHub Pages: subir los archivos HTML, CSS, JavaScript y la carpeta `imagenes/` a la raíz; ir a Settings → Pages → Deploy from a branch → `main` → `/(root)` → Save.
+## Publicación
+Subir el contenido de esta carpeta a la raíz de un repositorio público y habilitar GitHub Pages desde Settings → Pages → Deploy from a branch → main → /(root).
 
-**Aviso:** Este repositorio aún requiere los archivos de la página web para su publicación.
+## Pendientes
+Las imágenes SVG que dicen «Imagen pendiente de agregar» son marcadores provisionales porque las fotografías originales no venían en el ZIP. Reemplazarlas por fotos propias antes de la entrega final. El formulario de contacto es una demostración local y no envía correos.
